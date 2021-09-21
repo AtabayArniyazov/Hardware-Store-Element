@@ -7,14 +7,12 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "lint": "ng lint",
-    "lint:fix": "ng lint -- --fix"
+    "test": "ng test"
   },
   "precommit": [
     "lint"
   ],
-  "author": "Pavel Konan",
+  "author": "Atabay Arniyazov",
   "license": "ISC",
   "private": true,
   "repository": {

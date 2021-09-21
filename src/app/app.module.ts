@@ -5,6 +5,7 @@ import {AppComponent} from './app.component';
 import {HsHeaderComponent} from './hs-header/hs-header.component';
 import {AppRoutingModule} from './app-routing.module';
 import {HsHomePageComponent} from './hs-home-page/hs-home-page.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import {HsHomePageComponent} from './hs-home-page/hs-home-page.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

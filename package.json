@@ -1,14 +1,26 @@
 {
   "name": "gurlushyk",
   "version": "0.0.0",
+  "description": "Web part of Hardware Store Element project",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "lint": "ng lint",
+    "lint:fix": "ng lint -- --fix"
   },
+  "precommit": [
+    "lint"
+  ],
+  "author": "Pavel Konan",
+  "license": "ISC",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AtabayArniyazov/Hardware-Store-Element"
+  },
   "dependencies": {
     "@angular/animations": "~12.2.0",
     "@angular/common": "~12.2.0",
@@ -34,6 +46,7 @@
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
-    "typescript": "~4.3.5"
+    "typescript": "~4.3.5",
+    "prettier": "2.3.2"
   }
 }
